@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi's Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+     <script>
+        function toggleDescription(element) {
+            let description = element.closest('.profile-card').querySelector('.description');
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+        <aside class="sidebar">
+            <img src="raven.jpg" alt="Swathi's Profile" class="profile-pic">
+            <h2>Swathi Profile</h2>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/swathi-sivaprabu-b97840300/" target="_blank">
+                    <img src="Linkedin.jpg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/swathisivaprabu" target="_blank">
+                    <img src="GitHub.jpg" alt="GitHub">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+
+        
+        <main class="main-content">
+            <section id="about">
+                <h1>Welcome to My Profile</h1>
+                <p>Hello! I'm Swathi, a CS sophomore at SASTRA University, passionate about Web Development, ML, and CyberSecurity. Exploring technology and building innovative solutions. Always learning, coding, and problem-solving!</p>
+                <p>My goal as a CSE student? To conquer all domains without turning my brain into a fried motherboard. Basically, I’m aiming to be a tech superhero, but instead of a cape, I’ll be rocking a helmet... because let’s be real, with all this coding, my brain needs crash protection! 🚀</p>
+            </section>
+            <section id="edu">
+                <h1>Education</h1>
+                
+                <div class="education">
+                    <h2>SASTRA Deemded University</h2>
+                    <div class="edu-details">
+                        <p class="degree">Bachelor of Technology in Computer Science Engineering</p>
+                        <p class="year"><em>Present-Expected Graduation at 2027</em></p>
+                    </div>
+                </div>
+            
+                <div class="education">
+                    <h2>Senthil Public School</h2>
+                    <div class="edu-details">
+                        <p class="degree">Higher Secondary (CBSE) - 97.4%</p>
+                        <p class="year"><em>2023</em></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="container">
+                    <div class="profile-card">
+                        <h2>Sentiment Analysis on Chat Messages</h2>
+                        <p><strong>Technologies:</strong> NLP, ML, Bag of Words, TF-IDF, Deep Learning</p>
+                        <p class="description">Built an ML model to analyze chat messages and classify sentiment, gaining insights into text-based communication.
+                            Explored Bag of Words, TF-IDF, and deep learning techniques to improve accuracy.
+                            Overcame challenges in data preprocessing, feature extraction, and model tuning, learning the importance of fine-tuning NLP pipelines.</p>
+                            <div class="button-container">
+                            <button class="desc-btn" onclick="toggleDescription(this)">Desc</button>
+                        <a href="https://github.com/swathisivaprabu/ML-Projects" target="_blank" class="github-btn">GitHub</a>
+                    </div>
+                </div>
+                    
+                    <div class="profile-card">
+                        <h2>Train Reservation System</h2>
+                        <p><strong>Technologies:</strong> Java, GUI, HashMap, TreeMap</p>
+                        <p class="description">Developed a GUI-based Train Reservation System using Java Swing & JPanel for an interactive booking interface.
+                            Implemented HashMap & TreeMap for efficient ticket management, seat allocation, and retrieval of reservations.
+                            Designed a user-friendly interface for booking, canceling, and viewing train schedules.
+                            Strengthened expertise in Java GUI development, data structures, and real-world application of HashMap & TreeMap.</p>
+                            <div class="button-container">
+                            <button class="desc-btn" onclick="toggleDescription(this)">Desc</button>
+                        <a href="https://github.com/swathisivaprabu/WebDev-Projects" target="_blank" class="github-btn">GitHub</a>
+                    </div>
+                </div>
+            
+                    <div class="profile-card">
+                        <h2>Obesity Prediction Model</h2>
+                        <p><strong>Technologies:</strong> ML, Data Science, Logistic Regression, Random Forest</p>
+                        <p class="description">Built a predictive ML model to assess obesity risk based on lifestyle, diet, and physiological factors.
+                            Implemented data preprocessing, feature engineering, and class balancing to improve accuracy.
+                            Evaluated multiple models (Logistic Regression, Random Forest) and optimized performance using hyperparameter tuning.</p>
+                            <div class="button-container">
+                            <button class="desc-btn" onclick="toggleDescription(this)">Desc</button>
+                        <a href="https://github.com/swathisivaprabu/ML-Projects" target="_blank" class="github-btn">GitHub</a>
+                    </div>
+                    </div>
+                    
+                    <div class="profile-card">
+                        <h2>Email Sender Web App</h2>
+                        <p><strong>Technologies:</strong> HTML, CSS, API Integration</p>
+                        <p class="description">Developed a web-based email-sending platform using HTML, CSS, and an integrated email API.
+                            Designed a user-friendly interface for composing and sending emails effortlessly.
+                            Implemented backend API calls to securely handle email requests and ensure reliable message delivery.
+                            Demonstrated expertise in web development, user experience design, and real-world application of APIs.</p>
+                            <div class="button-container">
+                             <button class="desc-btn" onclick="toggleDescription(this)">Desc</button>
+                        <a href="https://github.com/swathisivaprabu/WebDev-Projects" target="_blank" class="github-btn">GitHub</a>
+                    </div>
+                </div>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>ERROR 404: The Actual Thing You’re Looking for… Not Found!😜</p>
+                   <p>
+                    🔹 Content Writer | OWASP Student Chapter:
+
+                    Crafting technical articles on cybersecurity, AI, and secure application development—turning complex tech into words that even my grandma almost understands.
+                    </p><p>
+
+                    🔹 Member | OWASP Thanjavur (SASTRA University Chapter):
+
+                    Organizing meetups, workshops, and conferences on secure application development. </p>
+                    
+                    🔹 Web Developer | ACE (Association of Computing Engineers):
+
+                    Building web solutions, engaging in hackathons, and diving into research discussions—because coding at 2 AM just hits different.</p>
+                    
+                    Always learning, always building, and occasionally debugging my life choices!</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Machine Learning</li>
+                    <li>NLP</li>
+                    <li>Predictive Modeling</li>
+                    <li>Database Integration</li>
+                </ul>
+                
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Strong Communication</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                    <li>Problem-Solving</li>
+                    <li>Time Management</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><bold>Email:</bold>swathisivaprabu@gmail.com</p>
+                <p><bold>Location:</bold>Tamil Nadu,India</p>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>
