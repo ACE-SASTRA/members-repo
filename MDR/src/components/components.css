@@ -1,0 +1,180 @@
+.Intro{
+    display: flex;
+    position: relative;/*to chamge the position*/
+    font-weight: 700;
+    color: #FFD700;
+    padding: 1%;
+    font-size: calc(5px + 2vmin);
+    text-align: center;
+    animation: Box 3s infinite;/*forwards will take in the animation and at the end the  final style is been locked*/
+    max-width: 500px; 
+}
+@keyframes Box{
+    0%{
+        border-left: px solid transparent;
+        border-top:2px solid transparent ;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+    }
+    25%{
+        border-top: 2px solid transparent;
+        border-right:2px solid transparent ;
+        border-left:2px solid transparent ;
+        border-bottom:2px solid palevioletred ;
+    }
+    50%{
+        border-top:2px solid transparent ;
+        border-right:2px solid transparent ;
+        border-left:2px solid palevioletred ;
+        border-bottom:2px solid palevioletred ;
+    }
+    75%{
+        border-top:2px solid palevioletred ;
+        border-right:2px solid transparent ;
+        border-left:2px solid palevioletred ;
+        border-bottom:2px solid palevioletred ;
+    }
+    90%{
+        border-top:2px solid palevioletred ;
+        border-right:2px solid palevioletred ;
+        border-left:2px solid palevioletred ;
+        border-bottom:2px solid palevioletred ;
+    }
+    100%{
+        border-top:2px solid palevioletred ;
+        border-right:2px solid palevioletred ;
+        border-left:2px solid palevioletred ;
+        border-bottom:2px ease-out ;
+    }
+
+}
+.App{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Logo{
+    position: absolute;
+    top: -200px;
+    left: 10px;
+    height: auto;
+    
+    width: 200px;
+}
+
+.New {
+  
+    font-family: 'Lucida Grande';
+    font-size: calc(35px + 2vmin);
+    font-weight: bold;
+    color: #FFD700;
+    animation: Glow 2s infinite;
+    text-decoration: underline #ff00ccf1;
+  }
+@keyframes Glow{
+    0%{
+        text-shadow: 0 0 5px #bfbfbf, 0 0 100px #FD3829;
+    }
+    
+    50% {
+        text-shadow: 0 0 10px #9b4343, 0 0 100px hotpink;
+    }
+    100% {
+        text-shadow: 0 0 5px #FFD700, 0 0 100px rgb(0, 68, 255) ;
+    }
+}
+
+.About{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    gap:200px;
+}
+
+.Photo{
+    height:auto;
+    width: 400px;
+    left:300px;
+    top: -220px;
+    position: absolute;
+}
+
+.Biohead{
+    position: absolute;
+    color: rgb(11, 220, 220);
+    font-weight: 500;
+    top:-330px;
+    right:300px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.Bio-Content{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    color: #FFD700;
+    position: absolute;
+    right:50px;
+    top: -260px;
+    word-spacing: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 56, 56, 0.856);  /* Transparent black */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:230px;
+    right: -1110px;
+    color: #FFD700;
+    padding-right: 2%;
+}
+
+.Icon-Arrange{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 55px;
+    gap:40px;
+}
+
+.Icon {
+    color: burlywood;
+    font-size: 3rem;
+    animation: transform 0.5s ease, color 0.5s ease ;
+}
+
+.Icon:hover{
+    transform: scale(1.1);
+    color:aquamarine;
+}
+
+.Heading{
+    padding-left: 50px;
+}
+
+.Detail-Contact{
+    display:flex;
+    position: relative;
+    top:-400px;
+    justify-content:center;
+    align-items: center;
+    color: antiquewhite;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Portfolio{
+    color: #9b4343;
+    
+}
